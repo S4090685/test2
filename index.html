@@ -1,0 +1,55 @@
+<html>
+
+<head>
+ <title>
+ My first website.
+</title>
+<Style>
+    .row{
+        <width:720px;
+        margin: 10px auto 10px auto ;
+    }
+    .image-container {
+        display: table-cell;
+        vertical-align: middle;
+        padding:20px;
+    }
+</Style>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>
+
+</head>
+
+<body style="background-color: bisque;">
+    
+<!--
+<h1>
+This is the main heading!
+</h1>
+<h2>
+    Hi hi hi hi ·-· 
+</h2>
+<p>
+    Crayon Shinchan
+</p>
+<br>
+<p>
+    another paragraph...
+</p>
+-->
+
+<div class="row">
+    <div class="image-container"><img id="shinchan" src="img/shinchan.jpg" width="500" height="300"/></div>
+    </div>
+
+<Script>
+    var sound1 = new buzz.sound("sound/boin.mp3");
+
+    window.onload = function() {
+        document.getElementById('shinchan').addEventListener('click',function () {sound1.play();});
+    };
+</Script>
+
+</body>
+
+</html>
